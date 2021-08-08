@@ -3,7 +3,7 @@
 {% block content %}
 
 <h4>Login Here:</h4>
-<form action="" method="post">
+<form action="" method="POST">
     {{ form.csrf_token }}
     <div class="form-group">
 
@@ -19,7 +19,7 @@
     </div>
     <div class="register_link">
         <p>Dont already have an account?</p>
-        <a href="{{ url_for(/register) }}">Create one here.</a>
+        <a href="{{ url_for('register') }}">Create one here.</a>
     </div>
 </form>
 {% endblock content %}

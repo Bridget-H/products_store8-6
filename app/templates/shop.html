@@ -13,8 +13,10 @@
     <img src="{{p.image}}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">{{p.product_name}}</h5>
-      <p class="card-text">$ {{p.price}}</p>
-      <a href="#" class="btn btn-primary">click here to add to cart</a>
+
+      <p class="card-text">:)</p>
+      <a href="{{ url_for('products')}}" class="btn btn-primary">{{p.price}}</a>
+    
     </div>
   </div>
 
